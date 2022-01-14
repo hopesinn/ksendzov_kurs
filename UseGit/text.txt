@@ -1,0 +1,40 @@
+TXT
+ 1. Создать внешний репозиторий c названием TXT.-------- Repositories -> TXT -> create
+ 2. Клонировать репозиторий TXT на локальный компьютер.-------- git init -> git clone https://github.com/hopesinn/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”.--------  cd TXT -> touch new.txt
+ 4. Добавить файл под гит.-------- git add new.txt
+ 5. Закоммитить файл.-------- git commit -m "commit"
+ 6. Отправить файл на внешний GitHub репозиторий.-------- git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+-------- vim new.txt -> I -> 
+
+FirstName:Hope,
+Age:20
+
+esc -> : -> wq
+
+ 8. Отправить изменения на внешний репозиторий.-------- git add new.txt ->  git commit -m "commit" -> git push
+ 9. Создать файл preferences.txt--------  touch preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+-------- vim preferences.txt -> I -> 
+
+serial:Magnificent Century,
+book:Oscar Wilde "The Picture of Dorian Gray",
+dish:cheesecake
+
+esc -> : -> wq
+ 11. Создать файл skills.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+-------- vim skills.txt -> I -> 
+
+Author:vadim ksendzov,
+group:26,
+skills:(SDLC,STLC),Client-server,Dev Tools,VPN,SQL,CMD,Mobile testing
+
+esc -> : -> wq
+12. Сделать коммит в одну строку.-------- git add new.txt | git status | git commit -m"commit"
+ 13. Отправить сразу 2 файла на внешний репозиторий.-------- git add preferences.txt skills.txt ->  git commit -m "commit" ->  git push
+ 14. На веб интерфейсе создать файл bug_report.txt.-------- add file ->bug_report.txt-> create new file
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.-------- preview -> commit new file -> "commit" -> commit directly to the main branch -> commit new file
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.-------- bug_report.txt -> edit this file -> report:bug
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.-------- preview -> "commit" -> commit directly to the main branch -> commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT-------- git pull 
