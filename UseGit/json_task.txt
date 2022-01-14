@@ -55,7 +55,7 @@ esc -> : -> wq
 esc -> : -> wq
 
  15. Отправить сразу 2 файла на внешний репозиторий. -------- git add preferences.json skills.json ->  git commit -m "commit" ->  git push
- 16. На веб интерфейсе создать файл bug_report.json. -------- add file -> create new file 
+ 16. На веб интерфейсе создать файл bug_report.json. -------- add file ->bug_report.json-> create new file 
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.-------- preview -> commit new file -> "commit" -> commit directly to the main branch -> commit new file
  18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.-------- bug_report.json -> edit this file -> {"report":"bug"}
  19. Сделать Commit changes (сохранить) изменения на веб интерфейсе. -------- preview -> "commit" -> commit directly to the main branch -> commit changes

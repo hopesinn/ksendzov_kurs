@@ -1,19 +1,73 @@
 XML
- 21. Создать внешний репозиторий c названием XML.
- 22. Клонировать репозиторий XML на локальный компьютер.
- 23. Внутри локального XML создать файл “new.xml”.
- 24. Добавить файл под гит.
- 25. Закоммитить файл.
- 26. Отправить файл на внешний GitHub репозиторий.
- 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
- 28. Отправить изменения на внешний репозиторий.
- 29. Создать файл preferences.xml
+ 21. Создать внешний репозиторий c названием XML.-------- Repositories -> XML -> create
+ 22. Клонировать репозиторий XML на локальный компьютер.-------- git clone https://github.com/hopesinn/XML.git
+ 23. Внутри локального XML создать файл “new.xml”.-------- touch new.xml
+ 24. Добавить файл под гит.-------- git add new.xml
+ 25. Закоммитить файл.-------- git commit -m "commit"
+ 26. Отправить файл на внешний GitHub репозиторий.-------- git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML. 
+-------- vim new.xml -> I -> 
+
+ <new.xml>
+        <FirstName>Hope</FirstName>
+        <Age>20</Age>
+</new.xml>
+
+
+esc -> : -> wq
+
+ 28. Отправить изменения на внешний репозиторий.-------- git add new.xml -> git commit -m"commit" ->  git push
+ 29. Создать файл preferences.xml -------- touch preferences.xml
  30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
- 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
- 32. Сделать коммит в одну строку.
- 33. Отправить сразу 2 файла на внешний репозиторий.
- 34. На веб интерфейсе создать файл bug_report.xml.
- 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
- 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
- 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
- 38. Синхронизировать внешний и локальный репозиторий XML
+-------- vim preferences.xml -> I ->
+
+<preferences.xml>
+<serial>Magnificent Century</serial>
+<book>
+        <author>Oscar Wilde</author>
+        <name>The Picture of Dorian Gray</name>
+</book>
+<dish>cheesecake</dish>
+</preferences.xml>
+
+
+esc -> : -> wq
+
+ 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+-------- vim skills.xml -> I ->
+
+<skills.xml>
+<author>
+        <name>vadim</name>
+        <lastname>ksendzov</lastname>
+</author>
+<group>26</group>
+<skills>
+  <skill>SDLC,STLC</skill>
+  <skill>Client-server</skill>
+  <skill>Dev Tools</skill>
+  <skill>VPN</skill>
+  <skill>SQL</skill>
+  <skill>CMD</skill>
+  <skill>Mobile testing</skill>
+</skills>
+</skills.xml>
+
+esc -> : -> wq
+
+32. Сделать коммит в одну строку. -------- git add new.xml | git status | git commit -m"commit"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий. -------- git add  preferences.xml  skills.xml -> git commit -m "commit" -> git push
+ 34. На веб интерфейсе создать файл bug_report.xml. -------- add file ->bug_report.xml-> create new file 
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе. -------- preview -> commit new file -> "commit" -> commit directly to the main branch -> commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.-------- bug_report.xml -> edit this file ->
+
+<bug_report.xml>
+ 
+<report>bug</report>
+
+</bug_report.xml>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.--------  
+ preview -> commit new file -> "commit" -> commit directly to the main branch -> commit new file
+38. Синхронизировать внешний и локальный репозиторий XML -------- git pull
